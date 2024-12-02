@@ -1,0 +1,8 @@
+CHOIX DE CONCEPTION :
+lors de l'application j'ai eu à effectuer les actions suivantes:
+
+*selection des exemples du net : une recherche de templates correspondant aux lignes de codes nécessaires par rapport à chaque partie de la page. 
+
+*assemblage de bouts de codes: choix minutieux de la methode a utiliser pour obtenir le resultat desiré.
+
+*outil de recherche chat gpt: pour beneficier de d'une assistance explicative et selective lors de l'assemblage de la page.

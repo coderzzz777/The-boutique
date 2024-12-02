@@ -1,0 +1,137 @@
+/* Style global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* En-tête */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+header nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Section Produits */
+#produits {
+  padding: 2rem;
+  text-align: center;
+}
+
+#produits h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.produits-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.produit {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 220px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produit img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produit h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.produit p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.produit button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.produit button:hover {
+  background-color: #555;
+}
+
+/* Pied de page */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Réactivité - media queries.*/
+@media screen and (max-width: 1200px) {
+  .produits-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .produits-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header nav ul {
+    text-align: left;
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .produits-container {
+    grid-template-columns: 1fr;
+  }
+
+  .produit {
+    width: 100%;
+  }
+}
